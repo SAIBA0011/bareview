@@ -32,7 +32,6 @@ class EditionsController extends Controller
      */
     public function create()
     {
-        return app()->abort(404);
         return view('editions.create');
     }
 
