@@ -18,6 +18,7 @@
 <script src="/js/main.js"></script>
 <script src="/js/animations.js"></script>
 <script src="/js/app.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,6 +28,13 @@
 
   ga('create', 'UA-56259244-1', 'auto');
   ga('send', 'pageview');
+
+  $(document).ready(function() {
+         $('#cfoWorldCongress').modal('show');
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
 </script>
 
 </body>

@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="/css/animate.css">
 	<link rel="stylesheet" href="/css/flexslider.css">
 	<link rel="stylesheet" href="/css/skeleton.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="/css/main.css">
 	<!--[if IE 9]><link rel="stylesheet" type="text/css" href="/css/ie.css"><![endif]-->
