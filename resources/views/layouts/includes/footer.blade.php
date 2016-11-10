@@ -28,13 +28,6 @@
 
   ga('create', 'UA-56259244-1', 'auto');
   ga('send', 'pageview');
-
-  $(document).ready(function() {
-         $('#cfoWorldCongress').modal('show');
-    });
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
 </script>
 
 </body>

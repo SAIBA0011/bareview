@@ -3,7 +3,7 @@
 @section('content')
 <section id="home" class="home boxed">
 
-	@if($featured)
+	@if(count($featured) < 1)
 		<div class="container">
 			
 			<div class="eight columns">
@@ -24,7 +24,7 @@
 			</div>
 
 		</div>
-	@endif()
+	@endif
 </section>
 
 <section id="editions" class="overview boxed">
@@ -86,37 +86,4 @@
 	</div>
 
 </section>
-
-<div class="modal fade" id="cfoWorldCongress" tabindex="-1" role="dialog" aria-labelledby="cfoWorldCongressLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="background:#c63538">
-      <img class="pull-right" src="images/iafei-logo.png" alt="CFO World Congress" width="300">
-        {{-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> --}}
-        <h3 class="modal-title" style="color:#ffffff; margin-top:20px;">Interested in the CFO World Congress?</h3>
-      </div>
-      <div class="modal-body">    
-
-        <p style="font-size:18px;">SAIBA is hosting the 46th CFO World Congress this November in Cape Town. Join the World Congress for CFOs and Financial Managers. Join 21 000 global and local finance leaders. 
-        <br><br>
-        <strong>9 - 10 November 2016.  Cape Town, CTICC</strong>.</p> 
-
-      </div>
-      <div class="modal-footer">
-      <form action="https://bulkro.com/admin/subscribe" method="POST" accept-charset="utf-8" class="form-inline pull-left">
-          <div class="form-group">
-            <input class="form-control" type="text" name="email" placeholder="Email" id="email"/>
-            <input type="hidden" name="list" value="KWCnKATFHcguF7nCPZ6FFw"/>
-            <button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="You will be redirected to the CFO World Congress Website" type="submit" name="submit" id="submit"/>Yes, I'm interested</button>
-          </div>
-
-          <div class="form-group">
-            <button type="button" class="btn" data-dismiss="modal">No Thanks</button>
-          </div>
-      </form>
-        
-      </div>
-    </div>
-  </div>
-</div>
 @stop
