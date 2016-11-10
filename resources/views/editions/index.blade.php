@@ -3,7 +3,7 @@
 @section('content')
 <section id="home" class="home boxed">
 
-	@if(count($featured) < 1)
+	@if(count($featured) <= 1)
 		<div class="container">
 			
 			<div class="eight columns">
